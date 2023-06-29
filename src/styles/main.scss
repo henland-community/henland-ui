@@ -1,0 +1,123 @@
+@import 'variables.scss';
+@import 'typography.scss';
+@import 'mixins.scss';
+
+:root {
+  --font-body: 13px;
+  @include respond-to('desktop') {
+    --font-body: 16px;
+  }
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--text-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: var(--body-transition);
+  font-size: var(--font-body);
+
+  line-height: 150%;
+  width: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  @media screen and (min-width: 1215px) {
+    padding: 0;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: var(--text-font);
+  font-weight: 700;
+}
+p {
+  white-space: pre-line;
+  line-height: 150%;
+}
+h1 {
+  font-size: 24px;
+  line-height: 125%;
+  @include respond-to('desktop') {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 125%;
+  @include respond-to('dekstop') {
+    font-size: 26px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 125%;
+  @include respond-to('desktop') {
+    font-size: 23px;
+  }
+}
+
+button {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  background: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-smooth: always;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+img.emoji {
+  width: $font-small-mobile;
+  pointer-events: none;
+}
+
+.markdown-doc {
+  p {
+    margin: 1em 0;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 1.5em 0 0.5em;
+  }
+  font-family: var(--text-font);
+}
+
+// used for modals and the events menu
+// in conjunction of the useBodyClass("overlay") hook.
+body.overlay:after {
+  content: '';
+  display: block;
+  position: fixed; /* could also be absolute */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}

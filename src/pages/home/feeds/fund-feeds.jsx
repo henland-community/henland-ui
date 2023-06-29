@@ -1,0 +1,77 @@
+import {
+  IRAN_FUNDING_CONTRACT,
+  PAKISTAN_FUNDING_CONTRACT,
+  QUAKE_FUNDING_CONTRACT,
+  UKRAINE_FUNDING_CONTRACT,
+} from '@constants'
+import FundFeed from './fund-feed'
+
+export function IranFeed() {
+  return (
+    <FundFeed
+      introText={
+        <>
+          This feed shows OBJKTs minted with the Iran donation address as
+          beneficiary of at least 50% of sales volume or tagged with #Tezos4Iran
+        </>
+      }
+      contractAddress={IRAN_FUNDING_CONTRACT}
+      cause="Iran"
+      namepsace="iran-feed"
+      tags={['tezos4iran', '#tezos4iran']}
+      infoUrl="https://github.com/henland-community/henland-docs/wiki/Tezos-for-Iran"
+    />
+  )
+}
+
+export function PakistanFeed() {
+  return (
+    <FundFeed
+      introText={
+        <>
+          This feed shows OBJKTs minted with the Pakistan donation address as
+          beneficiary of at least 50% of sales volume.
+        </>
+      }
+      contractAddress={PAKISTAN_FUNDING_CONTRACT}
+      cause="Pakistan"
+      namepsace="pakistan-feed"
+      infoUrl="https://github.com/henland-community/henland-docs/wiki/Pakistan-Fundraiser"
+    />
+  )
+}
+
+export function UkraineFeed() {
+  return (
+    <FundFeed
+      introText={
+        <>
+          This feed shows OBJKTs minted with the Ukraine donation address as
+          beneficiary of at least 50% of sales volume.
+        </>
+      }
+      contractAddress={UKRAINE_FUNDING_CONTRACT}
+      cause="Ukraine"
+      namepsace="ukraine-feed"
+      infoUrl="https://github.com/henland-community/henland-docs/wiki/Ukranian-Fundraising"
+    />
+  )
+}
+
+export function QuakeFeed() {
+  return (
+    <FundFeed
+      introText={
+        <>
+          Tezos community initiative to support those affected by the recent
+          earthquake in Turkey and Syria.
+        </>
+      }
+      contractAddress={QUAKE_FUNDING_CONTRACT}
+      cause="Turkey and Syria Earthquakes"
+      namepsace="quake-feed"
+      tags={['TezQuakeAid', '#TezQuakeAid']}
+      infoUrl="https://app.joyn.xyz/space/tezquakeaid-ec7f1f650671"
+    />
+  )
+}

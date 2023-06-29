@@ -1,0 +1,36 @@
+@import '@styles/variables.scss';
+@import '@styles/layout.scss';
+
+.tag {
+  font-family: --var(--text-font);
+  background: none;
+  border: none;
+  display: inline-flex;
+  color: var(--text-color);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  font-size: var(--font-body);
+  font-weight: bold;
+  align-items: center;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  img {
+    margin-right: 0.5em;
+  }
+}
+
+.feed_info {
+  border: 1px var(--gray-10) solid;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+
+  @include respond-to('desktop') {
+    width: 50%;
+  }
+}

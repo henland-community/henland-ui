@@ -1,0 +1,31 @@
+@import '@styles/layout.scss';
+@import '@styles/variables.scss';
+
+.style {
+  //min-width: 200px;
+  min-height: 300px;
+  // min-inline-size: 200px;
+  max-height: $max-token-height;
+  max-width: 100%;
+  width: 100vw;
+
+  margin: 0 auto;
+  border: none;
+  object-fit: contain;
+}
+
+.container {
+  .image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: $max-token-height;
+    margin: 0 auto;
+  }
+}
+
+.smol {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}

@@ -1,0 +1,51 @@
+@import '@styles/variables.scss';
+@import '@styles/layout.scss';
+
+.single_view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.load_container {
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.feed_container {
+  max-width: 1800px;
+  min-height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  @include respond-to('tablet') {
+    padding: 0 40px;
+  }
+  @include respond-to('desktop') {
+    padding: 0 60px;
+  }
+}
+
+.infinite_scroll {
+  align-self: stretch;
+  width: 100%;
+}
+
+.empty_section {
+  align-items: center;
+  align-self: center;
+  padding: 2em 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: var(--max-width-internal);
+  justify-content: center;
+  position: absolute;
+  pointer-events: none;
+}

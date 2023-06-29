@@ -1,0 +1,34 @@
+@import '@styles/variables.scss';
+@import '@styles/layout.scss';
+
+.container {
+  position: relative;
+
+  margin: auto;
+  min-height: 100vh;
+  // min-width: 320px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex-grow: 1;
+    width: 100%;
+    max-width: var(--max-width-internal);
+  }
+
+  // container: page / inline-size;
+
+  &.feed {
+    .content {
+      max-width: var(--max-width);
+    }
+  }
+}

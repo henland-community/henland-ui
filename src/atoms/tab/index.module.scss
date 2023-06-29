@@ -1,0 +1,39 @@
+@import '@styles/variables.scss';
+@import '@styles/layout.scss';
+.container {
+  width: 100%;
+}
+
+.tab {
+  padding: 0 10px 4px 0;
+  //border-bottom: 1px solid var(--gray-20);
+
+  &:hover,
+  &.active,
+  &.selected {
+    text-decoration: none;
+    // offset the bottom line by the border size.
+    margin-bottom: -1px;
+    border-bottom: 1px solid var(--gray-60);
+  }
+}
+
+.tabs {
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 5;
+  button,
+  a {
+    font-size: var(--font-body);
+    padding: 0.15em 12px;
+  }
+  @include respond-to('tablet') {
+    justify-content: flex-start;
+  }
+}
+
+.line {
+  align-self: flex-start;
+}

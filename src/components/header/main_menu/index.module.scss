@@ -1,0 +1,105 @@
+@import '@styles/variables.scss';
+@import '@styles/layout.scss';
+
+.theme_selection {
+  max-width: 165px;
+}
+.menu {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  flex-direction: column;
+
+  container: main_menu / inline-size;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: var(--body-transition);
+
+  z-index: 400;
+  height: 100vh;
+
+  .content {
+    line-height: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    pointer-events: all;
+    transform: translateY(-10%);
+
+    width: 100%;
+  }
+}
+
+.menu_label {
+  font-size: 20px;
+  margin-bottom: 0.2em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include respond-to('desktop') {
+    font-size: 30px;
+  }
+}
+
+.address {
+  position: absolute;
+
+  color: var(--secondary-color);
+  transform: translateY(-100%);
+}
+
+.menu_left,
+.menu_right {
+  //padding-top: 10cqh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu_right {
+  padding-left: 15px;
+
+  @include respond-to('desktop') {
+    padding-left: 30px;
+  }
+  button {
+    text-align: left;
+  }
+}
+.menu_left {
+  padding-right: 15px;
+
+  @include respond-to('desktop') {
+    padding-right: 30px;
+  }
+  a {
+    text-align: right;
+    align-self: flex-end;
+  }
+}
+
+.disabled {
+  color: var(--gray-30);
+}
+
+.state_buttons {
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: row;
+  gap: 0.5em;
+}
+
+.line {
+  height: 200%;
+  align-self: center;
+}
