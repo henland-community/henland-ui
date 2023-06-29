@@ -82,17 +82,18 @@ export const MAX_EDITIONS = 10000 // Limited by contract
 export const MIN_ROYALTIES = 10
 export const MAX_ROYALTIES = 25
 
+// 底图：https://ipfs.io/ipfs/QmNrhZHUaEqxhyLfqoq1mtHSipkWHeT31LNHb1QEbDHgnc
 export const IPFS_DEFAULT_THUMBNAIL_URI =
   'ipfs://QmNrhZHUaEqxhyLfqoq1mtHSipkWHeT31LNHb1QEbDHgnc'
 
-export const MARKETPLACE_CONTRACT_V1 = 'KT1Hkg5qeNhfwpKW4fXvq7HGZB9z2EnmCCA9'
-export const MARKETPLACE_CONTRACT_V2 = 'KT1HbQepzV1nVGg8QVznG7z4RcHseD5kwqBn'
-export const MARKETPLACE_CONTRACT_TEIA = 'KT1PHubm9HtyQEJ4BBpMTVomq6mhbfNZ9z5w'
+export const MARKETPLACE_CONTRACT_V1 = 'KT1Hkg5qeNhfwpKW4fXvq7HGZB9z2EnmCCA9' // Hic et Nunc Marketplace Legacy
+export const MARKETPLACE_CONTRACT_V2 = 'KT1HbQepzV1nVGg8QVznG7z4RcHseD5kwqBn' // Hic et Nunc Marketplace
+export const MARKETPLACE_CONTRACT_TEIA = 'KT1PHubm9HtyQEJ4BBpMTVomq6mhbfNZ9z5w' // Teia Community Marketplace
 export const MARKETPLACE_CONTRACT_HENLAND = ''
 export const MARKETPLACE_CONTRACT_OBJKTCOM_V1 =
-  'KT1FvqJwEDWb1Gwc55Jd1jjTHRVWbYKUUpyq'
+  'KT1FvqJwEDWb1Gwc55Jd1jjTHRVWbYKUUpyq' // objkt.com Marketplace v1
 export const MARKETPLACE_CONTRACT_OBJKTCOM_V4 =
-  'KT1WvzYHCNBvDSdwafTHv7nJ1dWmZ8GCYuuC'
+  'KT1WvzYHCNBvDSdwafTHv7nJ1dWmZ8GCYuuC' // objkt.com Marketplace v2
 
 export const MARKETPLACE_CONTRACTS_FROM_NAME = {
   'HEN v1 Marketplace': MARKETPLACE_CONTRACT_V1,
@@ -101,19 +102,19 @@ export const MARKETPLACE_CONTRACTS_FROM_NAME = {
   'Henland Marketplace': MARKETPLACE_CONTRACT_HENLAND,
   'OBJKT v1 Marketplace': MARKETPLACE_CONTRACT_OBJKTCOM_V1,
   'OBJKT v4 Marketplace': MARKETPLACE_CONTRACT_OBJKTCOM_V4,
-  'Crunchy Burner': 'KT1CZMurPAjSfZqcn6LBUNUhG4byE6AJgDT6',
+  'Crunchy Burner': 'KT1CZMurPAjSfZqcn6LBUNUhG4byE6AJgDT6', // Crunchy.Network Burner
 }
 
 export const MARKETPLACE_CONTRACTS_TO_NAME = flipObject(
   MARKETPLACE_CONTRACTS_FROM_NAME
 )
 
-export const HEN_CONTRACT_FA2 = 'KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton'
+export const HEN_CONTRACT_FA2 = 'KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton' // Hic et Nunc OBJKTs
 
-export const UKRAINE_FUNDING_CONTRACT = 'KT1DWnLiUkNtAQDErXxudFEH63JC6mqg3HEx'
-export const PAKISTAN_FUNDING_CONTRACT = 'KT1Jpf2TAcZS7QfBraQMBeCxjFhH6kAdDL4z'
-export const IRAN_FUNDING_CONTRACT = 'KT1KYfj97fpdomqyKsZSBdSVvh9afh93b4Ge'
-export const QUAKE_FUNDING_CONTRACT = 'KT1X1jyohFrZyDYWvCPXw9KvWxk2VDwxyg2g'
+export const UKRAINE_FUNDING_CONTRACT = 'KT1DWnLiUkNtAQDErXxudFEH63JC6mqg3HEx' // FXHASH Ukraine Donations
+export const PAKISTAN_FUNDING_CONTRACT = 'KT1Jpf2TAcZS7QfBraQMBeCxjFhH6kAdDL4z' // Pakistani Flood Donations
+export const IRAN_FUNDING_CONTRACT = 'KT1KYfj97fpdomqyKsZSBdSVvh9afh93b4Ge' // Tezos for Iran Donations
+export const QUAKE_FUNDING_CONTRACT = 'KT1X1jyohFrZyDYWvCPXw9KvWxk2VDwxyg2g' // TezQuakeAid 2023
 
 export const SUPPORTED_MARKETPLACE_CONTRACTS = [
   MARKETPLACE_CONTRACT_V2,
@@ -121,10 +122,10 @@ export const SUPPORTED_MARKETPLACE_CONTRACTS = [
   MARKETPLACE_CONTRACT_HENLAND,
 ]
 
-export const SUBJKT_CONTRACT = 'KT1My1wDZHDGweCrJnQJi3wcFaS67iksirvj'
-export const UNREGISTRY_CONTRACT = 'KT18xby6bb1ur1dKe7i6YVrBaksP4AgtuLES'
-export const PROXY_FACTORY_CONTRACT = 'KT1DoyD6kr8yLK8mRBFusyKYJUk2ZxNHKP1N'
-export const SIGNING_CONTRACT = 'KT1BcLnWRziLDNJNRn3phAANKrEBiXhytsMY'
+export const SUBJKT_CONTRACT = 'KT1My1wDZHDGweCrJnQJi3wcFaS67iksirvj' // Hic et Nunc Name Registry
+export const UNREGISTRY_CONTRACT = 'KT18xby6bb1ur1dKe7i6YVrBaksP4AgtuLES' // 委托合约
+export const PROXY_FACTORY_CONTRACT = 'KT1DoyD6kr8yLK8mRBFusyKYJUk2ZxNHKP1N' // Hic Royalty Distributor Proxy
+export const SIGNING_CONTRACT = 'KT1BcLnWRziLDNJNRn3phAANKrEBiXhytsMY' // 委托合约
 
 export const SWAP_TYPE_TEIA = 'TEIA'
 export const SWAP_TYPE_HEN = 'HEN'
@@ -337,31 +338,31 @@ export const TabIndex = {
 export const ossProjects = [
   {
     name: 'TezQuakeAid Turkey/Syria Fundraiser',
-    address: 'KT1X1jyohFrZyDYWvCPXw9KvWxk2VDwxyg2g',
+    address: 'KT1X1jyohFrZyDYWvCPXw9KvWxk2VDwxyg2g', // TezQuakeAid 2023
   },
   {
     name: 'Tezos4Iran Fundraiser',
-    address: 'KT1KYfj97fpdomqyKsZSBdSVvh9afh93b4Ge',
+    address: 'KT1KYfj97fpdomqyKsZSBdSVvh9afh93b4Ge', // Tezos for Iran Donations
   },
   {
     name: 'SavePakistan Fundraiser',
-    address: 'KT1Jpf2TAcZS7QfBraQMBeCxjFhH6kAdDL4z',
+    address: 'KT1Jpf2TAcZS7QfBraQMBeCxjFhH6kAdDL4z', // Pakistani Flood Donations
   },
   {
     name: 'Ukraine Relief Fundraiser',
-    address: 'KT1DWnLiUkNtAQDErXxudFEH63JC6mqg3HEx',
+    address: 'KT1DWnLiUkNtAQDErXxudFEH63JC6mqg3HEx', // FXHASH Ukraine Donations
   },
   {
     name: 'Henland Fountain Donations',
-    address: 'KT1EsvmkijLKPQmcJMbjDeKRXdwky1LWvwpG',
+    address: 'KT1EsvmkijLKPQmcJMbjDeKRXdwky1LWvwpG', // 委托合约
   },
   {
     name: 'Community Representation/Equity Donations (Multisig)',
-    address: 'KT1TGJGjh9oMntcny4J7eVn1NDPgCXimHqss',
+    address: 'KT1TGJGjh9oMntcny4J7eVn1NDPgCXimHqss', // 委托合约
   },
   {
     name: 'WG3.2 (collab contract dev team)',
-    address: 'KT1BBYzfuYjgRdeHJ79vG3fZd8cHW9ueCEcN',
+    address: 'KT1BBYzfuYjgRdeHJ79vG3fZd8cHW9ueCEcN', // 委托合约
   },
   {
     name: 'Processing',
