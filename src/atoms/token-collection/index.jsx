@@ -125,7 +125,7 @@ function TokenCollection({
     disable ? null : [namespace, ...swrParams],
     async (ns) => {
       return typeof query === 'string'
-        ? request(import.meta.env.VITE_TEIA_GRAPHQL_API, query, {
+        ? request(import.meta.env.VITE_HENLAND_GRAPHQL_API, query, {
             ...variables,
             ...(maxItems ? { limit: maxItems } : {}),
           })

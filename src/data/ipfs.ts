@@ -463,7 +463,7 @@ async function buildMetadataFile({
   contentRating: string
   formats: MintFormat[]
 }) {
-  const metadata: TeiaMetadata = {
+  const metadata: HenlandMetadata = {
     name,
     description,
     tags: tags ? tags.replace(/\s/g, '').split(',') : [],
@@ -478,7 +478,7 @@ async function buildMetadataFile({
     shouldPreferSymbol: false,
     rights,
     date: new Date().toISOString(),
-    mintingTool: 'https://teia.art/mint',
+    mintingTool: 'https://henland.xyz/mint',
   }
   if (accessibility) metadata.accessibility = accessibility
   if (contentRating) metadata.contentRating = contentRating
@@ -488,7 +488,7 @@ async function buildMetadataFile({
   return JSON.stringify(metadata)
 }
 
-interface TeiaMetadata {
+interface HenlandMetadata {
   name: string
   description: string
   tags: string[]

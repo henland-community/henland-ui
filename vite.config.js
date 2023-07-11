@@ -59,7 +59,7 @@ const copyPdfData = () => {
 }
 
 // Project based aliases
-const teiaAliases = {
+const henlandAliases = {
   '@atoms': path.resolve(__dirname, 'src', 'atoms'),
   '@components': path.resolve(__dirname, 'src', 'components'),
   '@constants': path.resolve(__dirname, 'src', 'constants'),
@@ -180,7 +180,7 @@ export default defineConfig(({ mode }) => {
         stream: 'vite-compatible-readable-stream',
         path: require.resolve('path-browserify'),
         util: 'rollup-plugin-node-polyfills/polyfills/util',
-        ...teiaAliases,
+        ...henlandAliases,
       },
     },
   }

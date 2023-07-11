@@ -51,7 +51,7 @@ export async function fetchGraphQL(
   operationName: string,
   variables: { [key: string]: any }
 ) {
-  const result = await fetch(import.meta.env.VITE_TEIA_GRAPHQL_API, {
+  const result = await fetch(import.meta.env.VITE_HENLAND_GRAPHQL_API, {
     method: 'POST',
     body: JSON.stringify({
       query: operationsDoc,

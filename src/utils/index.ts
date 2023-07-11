@@ -26,7 +26,7 @@ export function randomSeed(seed: number) {
 }
 
 type IPFSGateway =
-  | 'CDN'
+  | 'IPFS_CDN_NODE'
   | 'CLOUDFLARE'
   | 'PINATA'
   | 'IPFS'
@@ -45,13 +45,13 @@ const CIDToURL = (
   if (cid == null) {
     return ''
   }
-  if (type !== 'CDN' && !_.isEmpty(options)) {
+  if (type !== 'IPFS_CDN_NODE' && !_.isEmpty(options)) {
     console.warn('Using options for IPFS Gateways does nothing')
   }
 
   switch (type) {
-    case 'CDN':
-      return `https://cache.teia.rocks/ipfs/${cid}`
+    case 'IPFS_CDN_NODE':
+      return `https://ipfs.henland.xyz/ipfs/${cid}`
     case 'CLOUDFLARE':
       return `https://cloudflare-ipfs.com/ipfs/${cid}`
     case 'PINATA':

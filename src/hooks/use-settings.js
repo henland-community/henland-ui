@@ -59,7 +59,7 @@ const mapFromList = (input_list) => {
   return out_map
 }
 
-const report_url = (name) => `${import.meta.env.VITE_TEIA_REPORT}/${name}`
+const report_url = (name) => `${import.meta.env.VITE_HENLAND_REPORT}/${name}`
 
 /**
  * Fetches the various lists cached with SWR

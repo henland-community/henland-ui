@@ -75,7 +75,7 @@ export type MetadataAccessibility = {
   /** resource that is physiologically dangerous to some users.*/
   hazards: string[]
 }
-export type TeiaMeta = {
+export type HenlandMeta = {
   /** Accessibility metadatas */
   accessibility: MetadataAccessibility
   /** The content rating, for instance "mature" for nsfw.*/
@@ -172,7 +172,7 @@ export type NFTBase = {
   royalties_total: number
   royalty_receivers?: RoyaltyReceiver[]
 
-  teia_meta?: TeiaMeta
+  teia_meta?: HenlandMeta
 
   /** List of addresses currently owning that token */
   token_holders?: string[]
