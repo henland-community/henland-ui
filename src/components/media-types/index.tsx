@@ -40,7 +40,7 @@ export const RenderMediaType = ({
   const parsedArtifactUri = useMemo(
     () =>
       nft.artifact_uri
-        ? HashToURL(nft.artifact_uri, 'CDN', { size: 'raw' })
+        ? HashToURL(nft.artifact_uri, 'IPFS_CDN_NODE', { size: 'raw' })
         : '',
     [nft]
   )
@@ -65,10 +65,10 @@ export const RenderMediaType = ({
       return previewDisplayUri
     }
     if (nft.display_uri)
-      return HashToURL(nft.display_uri, 'CDN', { size: 'raw' })
+      return HashToURL(nft.display_uri, 'IPFS_CDN_NODE', { size: 'raw' })
 
     if (nft.mime_type?.startsWith('video')) {
-      return HashToURL(nft.artifact_uri, 'CDN', { size: 'raw' })
+      return HashToURL(nft.artifact_uri, 'IPFS_CDN_NODE', { size: 'raw' })
     }
   }, [nft, previewDisplayUri])
 

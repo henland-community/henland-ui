@@ -137,8 +137,13 @@ function TokenCollection({
       use: [laggy],
     }
   )
+  console.log('#debug_error*********************************************')
+  console.log('query:', query)
+  console.log('data:', data)
 
   if (error) {
+    console.log('#debug_error*********************************************')
+    console.log('error is true')
     return (
       <Container>
         <pre>{JSON.stringify(error, null, 2)}</pre>

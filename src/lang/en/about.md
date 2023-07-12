@@ -25,8 +25,8 @@
 - Wiki: [wiki.henland.xyz](https://github.com/henland-community/henland-docs/wiki)
 - Join the community: [discord](https://discord.com/invite/7pZrPCcgnG)
 - Agora/Forum: [discourse.henland.xyz](https://discourse.henland.xyz/)
-- Code: [H en lan d Github](https://github.com/henland-community)
-- Community Curation: [@TeiaArt](https://twitter.com/TeiaCommunity)
+- Code: [Henland Github](https://github.com/henland-community)
+- Community Curation: [@HenlandCommunity](https://twitter.com/HenlandCommunity)
 
 ---
 

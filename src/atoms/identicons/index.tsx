@@ -401,7 +401,7 @@ export const Identicon = ({
   const resolvedLogo = useMemo(() => {
     if (logo) {
       if (logo.startsWith('ipfs://')) {
-        return HashToURL(logo, 'CDN', { size: 'raw' })
+        return HashToURL(logo, 'IPFS_CDN_NODE', { size: 'raw' })
       }
 
       return logo

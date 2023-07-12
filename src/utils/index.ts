@@ -72,7 +72,7 @@ const CIDToURL = (
 /**
  * Converts an ipfs hash to ipfs url
  * @param {string} hash
- * @param {'CDN' | 'CLOUDFLARE' | 'PINATA' | 'IPFS' | 'DWEB' | 'NFTSTORAGE'} type
+ * @param {'IPFS_CDN_NODE' | 'CLOUDFLARE' | 'PINATA' | 'IPFS' | 'DWEB' | 'NFTSTORAGE'} type
  * @param {HashToURLOptions} [options]
  * @returns {string}
  */

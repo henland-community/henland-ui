@@ -24,6 +24,12 @@ export const ImageComponent = ({
     src = displayUri
   }
 
+  // console.log(#debug_error*********************************************');
+  // console.log('nft => ', nft);
+  // console.log('previewUri => ', previewUri);
+  // console.log('artifactUri => ', artifactUri);
+  // console.log('displayUri => ', displayUri);
+
   const onError = (error: any) => {
     console.error(error)
   }
