@@ -68,10 +68,10 @@ export const Footer = ({ menu, pin }: FooterProps) => {
           Henland DAO LLC.
           {menu && (
             <Button
-              alt="teia rotating logo"
+              alt="henland rotating logo"
               onClick={() => setLogoSeed(Math.random() * 100)}
             >
-              <RotatingLogo theme={theme} logos={logos} seed={logoSeed} />
+              {/* <RotatingLogo theme={theme} logos={logos} seed={logoSeed} /> */}
             </Button>
           )}
         </div>
