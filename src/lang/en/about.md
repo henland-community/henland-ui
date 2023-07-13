@@ -21,7 +21,7 @@
 ## Links
 
 - News and articles: [blog.henland.xyz](https://blog.henland.xyz)
-- Announcements and Updates: [Twitter](https://twitter.com/TeiaCommunity)
+- Announcements and Updates: [Twitter](https://twitter.com/HenlandCommunity)
 - Wiki: [wiki.henland.xyz](https://github.com/henland-community/henland-docs/wiki)
 - Join the community: [discord](https://discord.com/invite/7pZrPCcgnG)
 - Agora/Forum: [discourse.henland.xyz](https://discourse.henland.xyz/)
