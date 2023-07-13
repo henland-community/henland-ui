@@ -32,7 +32,7 @@
 
 ## Tech Specs
 
-The Henland Marketplace Interface and marketplace contract are [code forks](https://github.com/hen lan d-community/henland-ui) based on the open source Tezos NFT marketplace [hic et nunc](https://github.com/hicetnunc2000) that have been and will be further developed and maintained by the Henland community.
+The Henland Marketplace Interface and marketplace contract are [code forks](https://github.com/henland-community/henland-ui) based on the open source Tezos NFT marketplace [hic et nunc](https://github.com/hicetnunc2000) that have been and will be further developed and maintained by the Henland community.
 
 ---
 
