@@ -162,7 +162,7 @@ export const Header = () => {
       <header className={`${styles.container}`}>
         <div className={container_classes}>
           <div className={styles.left}>
-            <DropdownButton
+             {/*<DropdownButton
               alt={'events dropdown'}
               className={styles.events_button}
               icon={<EventIcon />}
@@ -170,7 +170,7 @@ export const Header = () => {
               label={isWide ? 'Events' : ''}
               id={`events-${location.pathname}`}
             >
-              {/* <EventMenu events={sample_events} /> */}
+              <EventMenu events={sample_events} /> 
               <DropDown menuID="events" vertical>
                 {sample_events?.map((evt) => {
                   return (
@@ -181,7 +181,7 @@ export const Header = () => {
                   )
                 })}
               </DropDown>
-            </DropdownButton>
+            </DropdownButton>*/}
           </div>
           <Button
             alt="henland logo"

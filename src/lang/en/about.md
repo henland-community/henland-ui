@@ -1,14 +1,14 @@
 # Henland is
 
-... a collaborative artwork made of artworks, a place for ideas and creative works.
+... an open digital content platform dedicated to making creativity and creation valuable. 
 
-... a non-profit, open-source online platform for trading digital assets as OBJKT NFTs.
+... Currently, HenLand provides creators with NFT digital content minting, showcasing, 
 
-... a collective, aligning under the values of sustainability, accessibility, and equity.
+... and other services, while offering trading services for digital content enthusiasts. 
 
-... owned and maintained by its community, built and improved by its participants.
+... The HenLand platform supports the digitization of various types of content, including painting, 
 
-... an infinite work in progress.
+... music, short videos, written works, 3D design, and animated images.
 
 ---
 
@@ -23,10 +23,10 @@
 - News and articles: [blog.henland.xyz](https://blog.henland.xyz)
 - Announcements and Updates: [Twitter](https://twitter.com/HenlandCommunity)
 - Wiki: [wiki.henland.xyz](https://github.com/henland-community/henland-docs/wiki)
-- Join the community: [discord](https://discord.com/invite/7pZrPCcgnG)
+- Join the community: [discord](https://discord.gg/jCADRqTCjx)
 - Agora/Forum: [discourse.henland.xyz](https://discourse.henland.xyz/)
 - Code: [Henland Github](https://github.com/henland-community)
-- Community Curation: [@HenlandCommunity](https://twitter.com/HenlandCommunity)
+- Community Curation: [@HenlandCommunity](https://twitter.com/henland2023)
 
 ---
 
